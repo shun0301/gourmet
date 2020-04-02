@@ -1,0 +1,64 @@
+.main {
+  width: 100%;
+  background-color: white;
+  .header {
+    background-color: #9f106a;
+    height: 59.63px;
+    font-weight: bold;
+    font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+    &__logo {
+      font-size: 2.2em;
+      font-weight: bold;
+      font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+      text-shadow: 1px 1px 0px black;
+      text-align: center;
+      padding: 8px;
+      display: flex;
+      &__before {
+        -webkit-transform: translateY(25px);
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+        font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+        text-shadow: 1px 1px 0px black;
+      }
+    }
+    .logo {
+      color: white;
+      text-decoration: none;
+    }
+    &__nav {
+      background-color: transparent;
+      border-bottom: solid 1.5px rgb(245, 243, 243);
+      ul {
+        list-style: none;
+        display: flex;
+        padding: 5px;
+        .header-nav:hover {
+          background-color: white;
+          border-bottom: #9f106a;
+          width: auto;
+          height: 100%;
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+      .menu_title {
+        font-size: 80%;
+        font-weight: bold;
+        color: #333355;
+        text-align: center;
+        padding: 0px 12px 5px;
+        margin: 0px 18px 0px;
+      }
+      .menu_desc {
+        color: gray;
+        font-size: 9px;
+        padding: 0px 5px;
+        margin: 1px 18px 0px;
+        text-align: center;
+      }
+    }
+  }
+}
