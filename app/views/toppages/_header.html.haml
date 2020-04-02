@@ -1,0 +1,22 @@
+.main
+  .header
+    .header__logo
+      = link_to root_path, class: "logo" do
+        GOURMET
+      .header__logo__before
+        from.UWASA
+    .header__nav
+      %ul
+        %li.header-nav
+          = link_to root_path do
+            .menu_title ホーム
+            .menu_desc HOME
+        %li.header-nav
+          = link_to "#" do
+            .menu_title グルメ
+            .menu_desc GOURMET
+        %li.header-nav
+          = link_to "#" do
+            .menu_title マップ
+            .menu_desc MAP
+
