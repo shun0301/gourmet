@@ -34,12 +34,9 @@
         list-style: none;
         display: flex;
         padding: 5px;
-        .header-nav:hover {
-          background-color: white;
-          border-bottom: #9f106a;
-          width: auto;
-          height: 100%;
-        }
+      }
+      .menu_title:hover {
+        color: #9f106a;
       }
       a {
         text-decoration: none;
