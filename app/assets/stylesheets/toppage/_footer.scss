@@ -1,0 +1,50 @@
+.footer {
+  padding: 30px 0;
+  color: white;
+  background-color: #9f106a;
+  .content {
+    display: flex;
+    justify-content: center;
+    &__categories {
+      padding-right: 100px;
+      &__head {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      &__box {
+        padding-top: 25px;
+        &__btn {
+          color: rgb(175, 172, 172);
+        }
+        &__into {
+          padding-top: 8px;
+        }
+      }
+    }
+    &__sns {
+      &__head {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      &__box {
+        padding-top: 25px;
+        &__btn {
+          color: rgb(175, 172, 172);
+        }
+        &__into {
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+  &__logo {
+    width: 100%;
+    padding-top: 25px;
+    padding-right: 15px;
+    font-size: 5px;
+    text-align: end;
+  }
+  a {
+    text-decoration: none;
+  }
+}
