@@ -7,8 +7,11 @@
           = link_to root_path, class: 'content__categories__box__btn' do
             ホーム
         %li.content__categories__box__into
-          = link_to "#", class: 'content__categories__box__btn' do
+          = link_to tweets_path, class: 'content__categories__box__btn' do
             新着グルメ
+        %li.content__categories__box__into
+          = link_to new_tweet_path, class: 'content__categories__box__btn' do
+            投稿
         %li.content__categories__box__into
           = link_to "#", class: 'content__categories__box__btn' do
             グルメマップ

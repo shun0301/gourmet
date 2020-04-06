@@ -12,9 +12,13 @@
             .menu_title ホーム
             .menu_desc HOME
         %li.header-nav
-          = link_to "#" do
+          = link_to tweets_path do
             .menu_title 新着グルメ
             .menu_desc 　NEWGOURMET
+        %li.header-nav
+          = link_to new_tweet_path do
+            .menu_title  投稿する
+            .menu_desc 　TWEET
         %li.header-nav
           = link_to "#" do
             .menu_title グルメマップ
