@@ -1,0 +1,31 @@
+.footer
+  .content
+    .content__categories
+      %h2.content__categories__head カテゴリー
+      %ul.content__categories__box
+        %li.content__categories__box__into
+          = link_to root_path, class: 'content__categories__box__btn' do
+            ホーム
+        %li.content__categories__box__into
+          = link_to "#", class: 'content__categories__box__btn' do
+            新着グルメ
+        %li.content__categories__box__into
+          = link_to "#", class: 'content__categories__box__btn' do
+            グルメマップ
+    .content__sns
+      %h2.content__sns__head SNS
+      %ul.content__sns__box
+        %li.content__sns__box__into
+          = link_to "/", class: "content__sns__box__btn" do
+            = icon('fab', 'facebook-square',  class: "content__sns__head__btn--icon")
+            Facebook
+        %li.content__sns__box__into
+          = link_to "/", class: "content__sns__box__btn" do
+            = icon('fab', 'twitter', class: "content__sns__head__btn--icon")
+            Twitter
+        %li.content__sns__box__into
+          = link_to "/", class: "content__sns__box__btn" do
+            = icon('fab', 'instagram', class: "contents__btn--icon")
+            Instagram
+  .footer__logo
+    © GOURMET formUWASA
