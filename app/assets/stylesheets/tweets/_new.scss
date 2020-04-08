@@ -1,0 +1,82 @@
+.tweet-new {
+  padding: 100px 420px;
+  text-align: center;
+  &__box {
+    &__title {
+      color: red;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    &__form {
+      margin-top: 30px;
+      &__image-title {
+         padding-bottom: 3px;
+         border-bottom: solid;
+         border-width: 2px;
+         border-color: #9f106a;
+         font-weight: bold;
+         text-align: left;
+         margin-bottom: 15px;
+      }
+      &__imag-field {
+        height: 420px;
+        width: 100%;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 7px;
+        &__icon {
+          -webkit-transform: translateY(150px);
+          text-align: center;
+          font-size: 100px;
+          cursor: pointer;
+        }
+        &__upload {
+          display: none;
+        }
+      }
+      &__field {
+        padding-top: 25px;
+        &__shop-name {
+          padding-bottom: 3px;
+          border-bottom: solid;
+          border-width: 2px;
+          border-color: #9f106a;
+          font-weight: bold;
+          text-align: left;
+        }
+        &__address {
+          padding-bottom: 3px;
+          border-bottom: solid;
+          border-width: 2px;
+          border-color: #9f106a;
+          font-weight: bold;
+          text-align: left;
+        }
+        &__text-field {
+          margin: 8px 0px;
+          border-radius: 7px;
+          height: 50px;
+          width: 100%;
+        }
+      }
+      &__btn {
+        margin-top: 40px;
+        display: block;
+        text-align: center;
+        &__submit {
+          padding: 0px 24px;
+          margin: 0 0 24px;
+          background-color: #9f106a;
+          color: white;
+          font-weight: bold;
+          border-radius: 7px;
+          font-size: 17px;
+          width: 360px;
+          min-height: 50px;
+          border-style: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
