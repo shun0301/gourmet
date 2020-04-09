@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get 'toppages/index'
+  # get 'toppages/index'
 
   root "toppages#index"
 
