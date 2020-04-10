@@ -1,2 +1,18 @@
 = render 'toppages/header'
-  
+.tweet-index
+  .tweetindexTop
+    %h1.tweetindexTop__title
+      投稿一覧
+  .tweetindexBox
+    .tweetindexBox__lists
+      - @tweets.each do |tweet|
+        = link_to new_tweet_path(tweet), class: 'tweetindexBox__lists__link' do
+          .tweetindexBox__lists__img
+            = image_tag tweet.image.url, class: 'tweetindexBox__lists__img__imgs'
+          .tweetindexBox__lists__body
+            %h1.tweetindexBox__lists__body__shopname
+            = tweet.shop_name
+            %h1.tweetindexBox__lists__body__address
+            = tweet.address
+  = paginate(@tweets)
+= render 'toppages/footer'
