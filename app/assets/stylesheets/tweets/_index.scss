@@ -1,0 +1,53 @@
+.tweet-index {
+  padding-top: 100px;
+}
+
+.tweetindexTop {
+  &__title {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+.tweetindexBox {
+  width: 100%;
+  &__lists {
+    width: 100%;
+    // display: flex;
+    // justify-content: space-between;
+    padding: 35px;
+    &__link {
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+      margin-right: 0;
+    }
+    &__img {
+      height: 420px;
+      width: 420px;
+      transition: box-shadow .5s;
+      &__imgs {
+        height: 100%;
+        width: 100%;
+      }
+      &__imgs:hover {
+        box-shadow: 0 12px 12px gray;
+      }
+    }
+    &__body {
+      background-color: rgba(197, 193, 193, 0.678);
+      padding: 16px;
+      &__shopname {
+        padding-bottom: 13px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+      }
+      &__address {
+        color: white;
+      }
+    }
+  }
+}
