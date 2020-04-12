@@ -7,7 +7,12 @@
         %h3.tweet-new__box__form__image-title 画像投稿
         .tweet-new__box__form__imag-field
           = f.label :image do
-            = icon('far', 'image', class: 'tweet-new__box__form__imag-field__icon')
+            .tweet-new__box__form__imag-field__prev-contents
+              - if @tweet.persisted?
+                .tweet-new__box__form__imag-field__prev-content
+                  = image_tag tweet.image.url, alt: "preview", class: "prev-image"
+              - else
+                = icon('far', 'image', class: 'tweet-new__box__form__imag-field__icon')
             = f.file_field :image, class: 'tweet-new__box__form__imag-field__upload'
         .tweet-new__box__form__field
           %h3.tweet-new__box__form__field__shop-name お店の名前
