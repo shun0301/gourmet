@@ -1,36 +1,19 @@
 .box-img {
-  padding: 100px 250px 45px;
+  margin: 100px 250px 125px;
   &__form {
     width: 100%;
-    height: 400px;
-    display: flex;
+    height: 100%;
+    &__title {
+      color: black;
+      font-weight: bold;
+      font-size: 25px;
+      margin: 15px 0px;
+    }
     &__first {
-      padding-right: 25px;
-    }
-    .img {
-      width:500px;
-      height:400px;
-      max-width:100%;
-      max-height:100%;  
-    }
-    &__comment {
-      // -webkit-transform: translate(25px,-80px);
-      background-color: rgba(255, 255, 255, 0.8);
-      // border-style: ridge;
-      width: 100%;
-      height: 75px;
-      // padding-left: 5px;
-      .address {
-        -webkit-transform: translate(25px,-80px);
-        font-size: 15px;
-        font-weight: 200;
-        color: white;
-      }
-      .shop {
-        -webkit-transform: translate(25px,-80px);
-        font-size: 25px;
-        font-weight: bold;
-        color: white;
+      display: flex;
+      &__images {
+        height: 420px;
+        width: 420px;
       }
     }
   }
