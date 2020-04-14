@@ -1,13 +1,8 @@
 .box-img
   .box-img__form
+    %h2.box-img__form__title グルメコレクション
     .box-img__form__first
-      = image_tag 'IMG_8581.JPG', class: 'img'
-      .box-img__form__comment
-        %h2.address 新宿区
-        %h2.shop 麺屋武蔵
-    .box-img__form__second
-      = image_tag 'IMG_2247.JPG', class: 'img'
-      .box-img__form__comment
-        %h2.address 新宿区
-        %h2.shop 麺屋武蔵
-
+      - @tweets.each do |tweet|
+        %ul.slider
+          %li.slider-item
+            = image_tag tweet.image.url, class: 'box-img__form__first__images'
