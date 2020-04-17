@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200406111055) do
+ActiveRecord::Schema.define(version: 20200415093009) do
 
   create_table "tweets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "image"
@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20200406111055) do
     t.text     "address",    limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.float    "latitude",   limit: 24
+    t.float    "longitude",  limit: 24
   end
 
 end

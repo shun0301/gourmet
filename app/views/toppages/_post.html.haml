@@ -6,7 +6,7 @@
   .newtopicBox
     .newtopicBox__lists
       - @tweets.each do |tweet|
-        = link_to new_tweet_path(tweet), class: 'newtopicBox__lists__link' do
+        = link_to tweet_show_path(:id), class: 'newtopicBox__lists__link' do
           .newtopicBox__lists__img
             = image_tag tweet.image.url, class: 'newtopicBox__lists__img__imgs'
           .newtopicBox__lists__body
