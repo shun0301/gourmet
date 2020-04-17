@@ -19,7 +19,7 @@
           = f.text_field :shop_name, class: 'tweet-new__box__form__field__text-field', placeholder: '例) パティスリーウー'
         .tweet-new__box__form__field
           %h3.tweet-new__box__form__field__address お店の場所
-          = f.text_field :address, class: 'tweet-new__box__form__field__text-field', placeholder: '例) 渋谷'
+          = f.text_field :address, id: "address", lass: 'tweet-new__box__form__field__text-field', placeholder: '例) 渋谷'
         .tweet-new__box__form__btn
-          = f.submit '投稿', class: 'tweet-new__box__form__btn__submit'
+          = f.submit '投稿', onclick: "codeAddress()", class: 'tweet-new__box__form__btn__submit'
 = render 'toppages/footer'
